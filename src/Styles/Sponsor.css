@@ -1,0 +1,17 @@
+.box{
+    margin-left: 120px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.audiophile{
+  padding-right: 20px;
+}
+.databiz{
+  padding-right: 20px;  
+}
+.maker{
+    padding-left: 20px;
+}
+.meet{
+    padding-left: 20px;
+}
