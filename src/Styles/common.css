@@ -1,0 +1,21 @@
+/* styles/common.css */
+
+  
+  @media (min-width: 768em) {
+    .container {
+      max-width: 750em;
+    }
+  }
+  
+  @media (min-width: 992em) {
+    .container {
+      max-width: 970em;
+    }
+  }
+  
+  @media (min-width: 1200em) {
+    .container {
+      max-width: 1170em;
+    }
+  }
+  

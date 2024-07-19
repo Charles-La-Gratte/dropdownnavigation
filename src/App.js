@@ -10,17 +10,18 @@ import Sponsor from './Components/Sponsor';
 function App() {
  
   return (
-    <React.Fragment>
-      <Navbar>
-        
-      </Navbar>
-      <Title/>
-      <Description/>
-      <Button/>
-      <Sponsor/>
-      <Picture/>
-     
-    </React.Fragment>
+  
+      <React.Fragment>
+        <Navbar>    
+        </Navbar>
+        <Title/>
+        <Description/>
+        <Button/>
+        <Sponsor/>
+        <Picture/>
+      
+      </React.Fragment>
+  
   );
 }
 

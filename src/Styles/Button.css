@@ -1,15 +1,15 @@
 .btn1{
     background-color: black;
     color: aliceblue;
-    border-radius: 10px;
-    margin-left: 120px;
-    margin-top: 30px;
+    border-radius: 5em;
+    margin-left: 8em;
+    margin-top: 1em;
     font-size: 0.8rem;
     cursor: pointer;
     
     outline: auto;
-    width: 140px;
-    height: 50px;
+    width: 10em;
+    height: 4em;
     text-align: center;
 
 }
