@@ -1,5 +1,6 @@
 import {useRef} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import "../Styles/main.css";
 import Dropdown from "./Dropdown/Dropdown";
 import DropDownItem from './DropdownItem/DropDownItem';
@@ -7,6 +8,7 @@ import DropDownItem from './DropdownItem/DropDownItem';
 
 function Navbar() {
     const navRef = useRef();
+    const navigate = useNavigate();
     const items1 = [
         { text: 'Todo List', icon: 'fas fa-home' },
         { text: 'Calendar', icon: 'fas fa-info' },
@@ -22,7 +24,15 @@ function Navbar() {
     
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
-    }
+    };
+
+    const goToLogin = () => {
+        navigate('/login');
+    };
+
+    const goToRegister = () => {
+        navigate('/Register');
+    };
     return ( 
         <div>
             <header>
@@ -54,8 +64,8 @@ function Navbar() {
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes/>
                     </button>    
-                        <button class="btn success">Login</button>
-                        <button class="btn success">Register</button>      
+                        <button class="btn success" onClick={goToLogin}>Login</button>
+                        <button class="btn success"  onClick={goToRegister}>Register</button>      
                 </nav>
                 <button className="nav-btn" onClick={showNavbar}>
                         <FaBars/>
