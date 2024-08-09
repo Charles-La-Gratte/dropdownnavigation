@@ -115,4 +115,19 @@
       transform: scale(1);
     }
   }
+
+  /* Positionnement et style du bouton de retour */
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+
   

@@ -9,25 +9,27 @@ import Button from './Components/Button';
 import Sponsor from './Components/Sponsor';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import { AuthProvider } from './context/AuthContext'; 
 
 function App() {
- 
   return (
-  <Router>
-      <React.Fragment> 
-        <Navbar/>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/Register" element={<Register />} />
-          {/* Ajoutez d'autres routes ici si nécessaire */}
-        </Routes>
-        <Title/>
-        <Description/>
-        <Button/>
-        <Sponsor/>
-        <Picture/>
-      </React.Fragment>
-  </Router>
+    <Router>
+      <AuthProvider>
+        <React.Fragment>
+          <Navbar />
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/Register" element={<Register />} />
+            {/* Ajoutez d'autres routes ici si nécessaire */}
+          </Routes>
+          <Title />
+          <Description />
+          <Button />
+          <Sponsor />
+          <Picture />
+        </React.Fragment>
+      </AuthProvider>
+    </Router>
   );
 }
 

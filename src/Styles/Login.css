@@ -305,6 +305,9 @@
 .login-form a:hover {
   text-decoration: underline;
 }
+p{
+  margin-top: 1em;
+}
 
 /* Keyframes for fade-in and zoom effect */
 @keyframes fadeInZoom {
@@ -327,4 +330,28 @@
     transform: scale(1);
   }
 }
+
+/* Positionnement et style du bouton de retour */
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-icon {
+  font-size: 40px;
+  color: white; /* Couleur de la flèche, à adapter */
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover .arrow-icon {
+  transform: translateX(-7px); /* Animation de la flèche vers la gauche */
+}
+
 
